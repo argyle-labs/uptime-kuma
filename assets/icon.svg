@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <clipPath id="tile"><rect x="16" y="16" width="480" height="480" rx="108"/></clipPath>
+    <pattern id="argyle" width="120" height="160" patternUnits="userSpaceOnUse">
+      <rect width="120" height="160" fill="#09160D"/>
+      <polygon points="60,0 120,80 60,160 0,80" fill="#1F4B2F"/>
+      <polygon points="0,0 60,80 0,160" fill="#132E1D"/>
+      <polygon points="120,0 60,80 120,160" fill="#132E1D"/>
+      <g stroke="#5CDD8B" stroke-width="2" opacity="0.30" stroke-dasharray="6 7">
+        <path d="M60 -80 L200 80 M60 -80 L-80 80 M60 80 L200 240 M60 80 L-80 240 M60 240 L200 400 M60 240 L-80 400"/>
+      </g>
+    </pattern>
+  </defs>
+  <g clip-path="url(#tile)"><rect x="16" y="16" width="480" height="480" fill="url(#argyle)"/></g>
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="none" stroke="#2BD3D3" stroke-width="6"/>
+  <g transform="translate(142.0 142.0) scale(9.5)" fill="#5CDD8B"><path d="M11.759.955c-4.071 0-7.93 2.265-10.06 5.774l-.16.263-.116.284c-1.81 4.44-2.188 9.118.621 12.459 2.67 3.174 6.221 3.328 9.477 3.308 3.256-.02 6.323-.482 8.995-2.032C22.75 19.714 24 16.917 24 14.53c0-2.388-.724-4.698-1.882-7.343l-.112-.257-.148-.238C19.683 3.2 15.83.955 11.758.955Zm0 3.868c2.919 0 5.19 1.305 6.816 3.914 2.076 4.747 2.076 7.724 0 8.929-3.116 1.808-11.234 2.359-13.57-.42-1.558-1.853-1.558-4.69 0-8.51 1.584-2.608 3.835-3.913 6.754-3.913z"/></g>
+</svg>
