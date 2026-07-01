@@ -2,6 +2,10 @@
 name = "uptime-kuma"
 version = "0.1.0"
 edition = "2021"
+description = "Uptime monitoring — orca service-backend"
+
+[package.metadata.orca]
+category = "monitoring"
 
 [lib]
 name = "uptime_kuma"
