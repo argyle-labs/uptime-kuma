@@ -14,7 +14,7 @@ This repo is **self-contained** — the steps below run uptime-kuma **by hand, w
 
 ## Run it without orca
 
-### Docker / Podman
+### Docker Compose
 
 ```yaml
 # compose.yml
@@ -33,7 +33,22 @@ services:
 docker compose up -d
 ```
 
-Podman: the same file with `podman-compose up -d`.
+### Other runtimes
+
+**Podman** — the compose above works with `podman compose up -d`, or run it directly:
+
+```sh
+podman run -d --name uptime-kuma --restart unless-stopped \
+    -p 3001:3001/tcp \
+    -v ./data:/app/data \
+    louislam/uptime-kuma:1
+```
+
+**LXC** — on a container-capable LXC (e.g. a Proxmox LXC with nesting enabled) run the same image via Docker/Podman as above, or install uptime-kuma from upstream directly on the guest: <https://github.com/louislam/uptime-kuma>.
+
+**VM** — install uptime-kuma from upstream (<https://github.com/louislam/uptime-kuma>) or run the same container image inside the VM; expose port `3001`.
+
+**Unraid** — add via *Community Applications*, or *Docker → Add Container* with image `louislam/uptime-kuma:1`, port `3001`, and the volume paths above.
 
 ### Ports & data
 
