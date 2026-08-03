@@ -70,10 +70,10 @@ orca drives this plugin through the single generic `service.*` surface — no pe
 
 ```sh
 orca service.deploy uptime-kuma      # render + launch on any supported runtime
-orca service.status uptime-kuma      # health + rich diagnostics (typed payload)
 orca service.backup uptime-kuma      # location-agnostic backup (tar; PBS on Proxmox)
-orca service.configure uptime-kuma   # apply config via the upstream API
 ```
+
+`service.status` (health + rich diagnostics) and `service.configure` (apply config via the upstream API) are **planned** — the descriptor declares them, but they are not yet implemented (the current handlers return an unimplemented stub).
 
 ## Layout
 
